@@ -28,19 +28,17 @@ void setup() {
   
   int timesToBlink = 1;
   timesToBlink = timesToBlink + 3 * 2;
-  pinMode(LED_BUILTIN, OUTPUT);
-  digitalWrite(LED_BUILTIN, HIGH); //it does not stop blinking, this is an infinite loop. 
 
-  while (timesToBlink > 0) {
-    digitalWrite(LED_BUILTIN, HIGH);  // turn the LED on (HIGH is the voltage level)
-  delay(1000);                      // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);   // turn the LED off by making the voltage LOW
-  delay(1000); 
+  if (timesToBlink > 4) {
+    pinMode(LED_BUILTIN, OUTPUT);
   }
 
 }
 
 // the loop function runs over and over again forever
 void loop() {
-                       // wait for a second
+  digitalWrite(LED_BUILTIN, HIGH);  // turn the LED on (HIGH is the voltage level)
+  delay(1000);                      // wait for a second
+  digitalWrite(LED_BUILTIN, LOW);   // turn the LED off by making the voltage LOW
+  delay(1000);                      // wait for a second
 }
