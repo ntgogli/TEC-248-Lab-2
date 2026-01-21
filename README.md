@@ -1,2 +1,2 @@
-# TEC-248
-Repository for TEC 284 class
+# TEC-248-Lab-2
+Repository for TEC-248-Lab-2
